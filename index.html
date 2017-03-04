@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <link rel="stylesheet" href="bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <form>
+        <div class="form-group" >
+            <label>Name</label>
+            <input 
+                placeholder="Sarah Ahmed" 
+                class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label>Email</label>
+            <input 
+                placeholder="sarahsga4@gmail.com" 
+                class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label>Postal Code</label>
+            <input
+                pattern="\d{5}" 
+                placeholder="12345" 
+                class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label>Phone</label>
+            <input 
+                pattern="\+\d{2}-\d{3}-\d{7}"
+                placeholder="+92-331-1234567" 
+                class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label>Expected Salary</label>
+            <input 
+                pattern="(\d+,?)*\d+"
+                placeholder="80000" 
+                class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label>Roll Number</label>
+            <input 
+                pattern="[A-Z]{2}-\d{3}"
+                placeholder="SE-005" 
+                class="form-control">
+        </div>
+        
+
+        
+
+        <button type="submit" class="btn btn-lg btn-success" >Submit</button>
+    </form>
+
+</body>
+
+</html>
